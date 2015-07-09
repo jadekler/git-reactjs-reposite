@@ -1,0 +1,4 @@
+---
+applications:
+  - name: git-reactjs-reposite
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
