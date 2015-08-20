@@ -1,1 +1,18 @@
 .idea*
+Gemfile.lock
+node_modules*
+vendor/assets/semantic/dist/components/src*
+vendor/assets/semantic/src*
+vendor/assets/semantic/tasks*
+tmp*
+log*
+*schema.rb
+.rake_tasks~
+**/.DS_Store
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+/public/assets
+
+npm-debug.log
