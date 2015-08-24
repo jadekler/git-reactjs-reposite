@@ -1,31 +1,13 @@
 import $ from 'jquery';
 import React from 'react';
-import Feed from 'components/Feed';
-import LeaderBoard from 'components/LeaderBoard';
-import NewMatchForm from 'components/NewMatchForm';
+import RepoBoard from 'components/RepoBoard';
 
 $(function onLoad() {
   function render() {
-    if ($('#rankings').length > 0) {
-      React.render(
-        <LeaderBoard />,
-        document.getElementById('rankings')
-      );
-    }
-
-    if ($('#feed').length > 0) {
-      React.render(
-        <Feed />,
-        document.getElementById('feed')
-      );
-    }
-
-    if ($('#newMatchForm').length > 0) {
-      React.render(
-        <NewMatchForm />,
-        document.getElementById('newMatchForm')
-      );
-    }
+    React.render(
+      <RepoBoard />,
+      document.getElementById('content')
+    );
   }
 
   render();
