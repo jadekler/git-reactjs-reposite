@@ -10,7 +10,12 @@ const config = {
     extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx', '.css', 'config.js']
   },
   module: {
-    loaders: [],
+    loaders: [
+      {test: /\.jsx$/, exclude: /node_modules/, loader: 'babel-loader'},
+      {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
+      {test: require.resolve('jquery'), loader: 'expose?jQuery'},
+      {test: require.resolve('jquery'), loader: 'expose?$'}
+    ],
   },
 };
 

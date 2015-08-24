@@ -16,3 +16,5 @@ log*
 /public/assets
 
 npm-debug.log
+
+generated-app.js

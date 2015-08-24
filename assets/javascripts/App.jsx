@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import React from 'react';
-import LeaderBoard from 'components/LeaderBoard';
 import Feed from 'components/Feed';
+import LeaderBoard from 'components/LeaderBoard';
 import NewMatchForm from 'components/NewMatchForm';
 
 $(function onLoad() {
