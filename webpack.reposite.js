@@ -2,7 +2,6 @@ const path = require('path');
 
 const config = {
   output: {filename: 'generated-app.js'},
-  externals: {jquery: 'var jQuery'},
   context: __dirname,
   entry: ['./assets/javascripts/App'],
   resolve: {
