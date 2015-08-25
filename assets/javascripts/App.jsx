@@ -11,13 +11,4 @@ $(function onLoad() {
   }
 
   render();
-
-  // TODO: this may be unnecessary?
-  $(document).on('page:change', () => {
-    render();
-  });
-});
-
-$("document").ready(function() {
-  $('.ui.dropdown').dropdown();
 });
