@@ -18,6 +18,9 @@ var RepoBoard = React.createClass({
   getInitialState: function() {
     return getRepositories();
   },
+  componentDidMount: function() {
+    AppStore.addChangeListener(this._onChange);
+  },
   render: function() {
     return (
       <div>
@@ -26,6 +29,9 @@ var RepoBoard = React.createClass({
         {this.state.repositories.length > 0 ? this.state.repositories : <div className='loading'>Loading GitHub data...</div>}
       </div>
     );
+  },
+  _onChange: function() {
+    this.setState(getRepositories());
   }
 });
 
