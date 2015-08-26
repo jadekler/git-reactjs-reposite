@@ -16,6 +16,12 @@ const config = {
       {test: require.resolve('jquery'), loader: 'expose?$'}
     ],
   },
+  externals: {
+    fs: '{}',
+    tls: '{}',
+    net: '{}',
+    console: '{}'
+  }
 };
 
 module.exports = config;
